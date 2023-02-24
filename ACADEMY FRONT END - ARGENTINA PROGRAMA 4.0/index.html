@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="avatar.ico">
+    <title>CURRICULUM VITAE</title>
+    <link rel="stylesheet" href="stilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/bcf541d012.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <section id="menu">
+        <ul>
+            <li class="item"><a href="#">Inicio</a></li>
+            <li class="item"><a href="#sobremi">Sobre mi</a></li>
+            <li class="item"><a href="#experiencialaboral">Experiencia laboral</a></li>
+            <li class="item"><a href="#estudios">Estudios</a></li>
+            <li class="item"><a href="#contacto">Contacto</a></li>
+        </ul>
+    </section>
+</header>
+    <br> 
+    <div class="caja">
+        <section id="sobremi">
+            <div class="icono1">
+                <img src="avatar.ico" width="40px" height="40px"></div>  
+            <div class="titulo">
+                <h1>Sobre mi</h1>
+            </div>
+            <ul>
+                <li>Nombre: Soham Powell</li>
+                <li>Email:soham.powell@example.com</li>
+                <li>Nacimiento: 05/10/1977</li>
+                <li>Direccion: 1784 Perspectiva RD</li>
+                <li>Ciudad: Concord</li>
+                <li>Estado: New Hampshire</li>
+            </ul>
+        </div>    
+        <div class="foto">
+                <img src="fotocv.jpg" width="150px" height="150px"></div>  
+        </section>
+    </div>
+<br>
+<br>
+<br>
+    <div class="caja">
+        <section id="experiencialaboral">
+            <div class="icono2">
+                <img src="trabajo.ico" width="40px" height="40px"></div>
+            <div class="titulo">   
+            <h1>Experiencia Laboral</h1>
+            </div>
+            <ul>
+                <li>Año 2000/2006: KTH Royal Institute of Technology, Suecia.(Remoto)</li>
+                <li>Año 2006/2013: ETH Zürich.(Remoto)</li>
+            </ul>
+            <button id="actual" onclick="MostrarTrabajo()">Apretar</button>
+                <p id="apretar"></p>
+        </div>
+    <div class="trabajo">
+            <img src="trabajos.jfif" width="150px" height="150px">
+        </section>
+    </div> 
+    </div>
+<br>
+<br>
+    <div class="caja">
+        <section id="estudios">
+            <div class="icono3">
+                <img src="estudios.ico" width="50px" height="50px"></div>
+            <div class="titulo">
+                <h1>Estudios</h1> 
+            </div>      
+        <ul>
+            <li>Primario: St. Paul's School </li>
+            <li>Secundario: Escuela Comunitaria Técnica de NH</li>
+            <li>Universitario: Universidad de Antioch de NH</li>
+            <li>Idiomas: Frances, Aleman</li>
+            <li>Cursos: Ciencias de Informacion</li>
+            <li>Postgrado: Maestria Ciencias de Informacion</li>
+        </ul>
+        <div class="estudio">
+            <img src="estudios.jfif" width="150px" height="150px"/>  
+        </section>
+        </div> 
+    </div>  
+<br>
+<br>   
+<footer>
+    <div class="caja">
+        <section id="contacto">
+            <div class="icono4">
+                <img src="contacto.ico" width="40px" height="40px">
+                    <div class="cto">        
+                        <h2>Contacto</h2>
+                    </div>
+        </section>  
+            <div>
+            <button id="btn" onclick="MostrarTelefono()">Apretar</button>
+                <p id="click"></p>
+            </div>
+    </div>
+<script>
+        function MostrarTelefono() {
+            document.getElementById("click").innerHTML = "Cel: (884)685-8966/<br>Mail:soham.powell@example.com";
+    }
+</script> 
+    <div class="contactar">
+        <img src="contacto.jfif" width="150px" height="150px">
+    </div>
+<script>
+        function MostrarTrabajo() {
+            document.getElementById("apretar").innerHTML = "*Desde año 2014 hasta 2023 trabajo en IBM Internet Security Systems.";
+    }
+</script> 
+</footer>
+</body>
+</html>
